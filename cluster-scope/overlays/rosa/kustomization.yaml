@@ -28,6 +28,10 @@ resources:
   - ../../base/operators.coreos.com/operatorgroups/apex
   - ../../base/operators.coreos.com/subscriptions/crunchy-postgres
   # --------------------------------------------------------------------------------------
+  # RBAC
+  # --------------------------------------------------------------------------------------
+  - ../../base/rbac.authorization.k8s.io/clusterrolebindings/apex
+  # --------------------------------------------------------------------------------------
   # Premade bundles (some may include CRDs)
   # --------------------------------------------------------------------------------------
   - ../../bundles/acme-operator

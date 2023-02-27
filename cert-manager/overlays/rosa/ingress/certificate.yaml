@@ -1,7 +1,7 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: default-ingress-certificate
+  name: ingress-certificate
   namespace: openshift-ingress
 spec:
   dnsNames:
@@ -10,4 +10,4 @@ spec:
   issuerRef:
     name: ingress-letsencrypt
   renewBefore: 360h0m0s
-  secretName: default-ingress-certificate
+  secretName: ingress-certificate

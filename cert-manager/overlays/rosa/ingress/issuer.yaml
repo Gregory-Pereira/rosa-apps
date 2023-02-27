@@ -20,4 +20,4 @@ spec:
             name: aws-route53-credentials
       selector:
         dnsZones:
-        - octo-emerging.redhataicoe.com
+        - k1wl.p1.openshiftapps.com
