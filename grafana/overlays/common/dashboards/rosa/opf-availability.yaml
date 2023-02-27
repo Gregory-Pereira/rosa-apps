@@ -1,0 +1,9 @@
+apiVersion: integreatly.org/v1alpha1
+kind: GrafanaDashboard
+metadata:
+  labels:
+    app: grafana
+  name: rosa-availability
+spec:
+  customFolderName: rosa
+  url: https://raw.githubusercontent.com/operate-first/SRE/master/dashboards/opf-availability.json

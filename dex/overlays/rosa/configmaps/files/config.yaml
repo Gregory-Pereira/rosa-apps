@@ -15,13 +15,13 @@ telemetry:
 oauth2:
   skipApprovalScreen: true
 
-# staticClients:
-#   - id: grafana
-#     name: Grafana
-#     redirectURIs:
-#       - https://grafana.open-svc-sts.k1wl.p1.openshiftapps.com/login/generic_oauth
-#       - http://grafana.open-svc-sts.k1wl.p1.openshiftapps.com/login/generic_oauth
-#     secretEnv: GRAFANA_SECRET
+staticClients:
+  - id: grafana
+    name: Grafana
+    redirectURIs:
+      - https://grafana.open-svc-sts.k1wl.p1.openshiftapps.com/login/generic_oauth
+      - http://grafana.open-svc-sts.k1wl.p1.openshiftapps.com/login/generic_oauth
+    secretEnv: GRAFANA_SECRET
 
 connectors:
   - type: openshift

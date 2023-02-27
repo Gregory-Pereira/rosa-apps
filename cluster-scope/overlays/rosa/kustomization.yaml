@@ -26,12 +26,15 @@ resources:
   # Operatorgroups and subscriptions
   # --------------------------------------------------------------------------------------
   - ../../base/operators.coreos.com/operatorgroups/apex
+  - ../../base/operators.coreos.com/operatorgroups/rosa-monitoring
   - ../../base/operators.coreos.com/subscriptions/crunchy-postgres
+  - ../../base/operators.coreos.com/subscriptions/grafana-operator
   # --------------------------------------------------------------------------------------
   # Premade bundles (some may include CRDs)
   # --------------------------------------------------------------------------------------
   - ../../bundles/acme-operator
   - ../../bundles/cert-manager
+  - ../../bundles/rosa-monitoring
   - ../../bundles/jaeger-operator
   - ../../bundles/opentelemetry-collector-operator
   - ../../bundles/tekton-chains

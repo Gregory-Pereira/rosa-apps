@@ -1,0 +1,29 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: blackbox-service-monitor
+spec:
+  endpoints:
+    # - interval: 60s
+    #   metricRelabelings:
+    #     - sourceLabels:
+    #         - __address__
+    #       targetLabel: __param_target
+    #     - sourceLabels:
+    #         - __param_target
+    #       targetLabel: instance
+    #     - replacement: 'https://thanos-query-frontend-opf-observatorium.apps.smaug.na.operate-first.cloud/'
+    #       targetLabel: target
+    #     - replacement: thanos-query-frontend
+    #       targetLabel: opf_instance
+    #   params:
+    #     module:
+    #       - http_2xx
+    #     target:
+    #       - 'https://thanos-query-frontend-opf-observatorium.apps.smaug.na.operate-first.cloud/'
+    #   path: /probe
+    #   targetPort: 9115
+  selector: {}
+  namespaceSelector:
+    matchNames:
+      - opf-monitoring
